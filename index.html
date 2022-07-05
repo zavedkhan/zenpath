@@ -1,0 +1,806 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ZENPATH</title>
+        <!-- Favicon-->
+        <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+
+        <!-- Bootstrap Lib -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="lib/slick/slick.css">
+        <link rel="stylesheet" href="lib/slick/slick-theme.css">
+
+        <link rel="stylesheet" href="css/jquery.circular-carousel.css">
+
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css'>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 text-uppercase" id="mainNav">
+            <div class="container-xxl container-xl container-lg container-md container-sm">
+
+                <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+               
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body flex-grow-1 align-items-center">
+                    
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Effects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ingredients</a>
+                     </li>
+                  </ul>
+                  
+                  <a class="navbar-brand mx-auto d-sm-block d-none" href="#"><img src="assets/Logo.svg" alt="ZENPATH Logo"></a>
+
+                  <ul class="navbar-nav mb-2 mb-lg-0 d-sm-block d-none">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link me-3">Magazine</a>
+                    </li>
+                  </ul>  
+
+                  <select class="selectpicker languageSelect d-sm-block d-none" data-width="fit">
+                    <option data-content='<span class="flag-icon flag-icon-us"></span> Eng'>Eng</option>
+                    <option  data-content='<span class="flag-icon flag-icon-mx"></span> Esp'>Esp</option>
+                  </select>
+                        
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"><img src="assets/icons/search.svg" alt="search" width="20px" height="20px"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="assets/icons/user.svg" alt="user" width="20px" height="20px"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="assets/icons/bag.svg" alt="cart" width="20px" height="20px"></a>
+                     </li>
+                  </ul>
+
+                </div>
+             </div>
+                
+            </div>
+     </nav>
+        
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-2 h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-4 align-item-center text-start">
+                        <h1 class="fw-light text-primary">Take control of <br> your <span class="fw-bold"> MOOD</span></h1>
+                        <p class="text-white-75 mb-4">Innovative formula to relief <br> stress and support your mood.</p>
+                        <a class="btn btn-primary px-5 py-2 rounded-0" href="#about">LEARN MORE</a>
+                    </div>
+                    <div class="col-lg-8 align-item-center">
+                    <div class="circle-round">
+                     <!-- Swiper -->
+                     <ul class="Slide3D d-sm-block d-none">
+                        <li class="item active">
+                            <div class="img-a">
+                                <img src="assets/slide-pic/Harmony-carousel-min.png" alt="">
+                            </div>
+                            <div class="img-b">
+                                <img src="assets/slide-pic/Harmony.png" alt="">
+                            </div>
+
+                        </li>
+                        <li class="item">
+                            <div class="img-a">
+                                <img src="assets/slide-pic/focus-carousel-min.png" alt="">
+                            </div>
+                            <div class="img-b">
+                                <img src="assets/slide-pic/Focus.png" alt="">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img-a">
+                                <img src="assets/slide-pic/sleep-carousel-min.png" alt="">
+                            </div>
+                            <div class="img-b">
+                                <img src="assets/slide-pic/Sleep.png" alt="">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img-a">
+                                <img src="assets/slide-pic/Immunity-carousel-min.png" alt="">
+                            </div>
+                            <div class="img-b">
+                                <img src="assets/slide-pic/immunity.png" alt="">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img-a">
+                                <img src="assets/slide-pic/Enery-carousel-min.png" alt="">
+                            </div>
+                            <div class="img-b">
+                                <img src="assets/slide-pic/Energy.png" alt="">
+                            </div>
+                        </li>
+                       
+                      </ul>
+                        <!--  -->
+                        <div class="controls">
+                            <a href="#" class="previous me-3"><img src="assets/slide-pic/crousal-left.svg" alt="crousal-left"></a> 
+                            <a href="#" class="next  ms-3"><img src="assets/slide-pic/crousal-right.svg" alt="crousal-right"></a>
+                         </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="heroYoga d-none d-sm-block" style="background-image:url('assets/hero-yoga-image.png') ;"></div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section" id="guides" style="background:url('assets/background/banner-2.jpg') no-repeat center">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-secondary mb-4">ZENPATH guides you to master your body <br> and mind with  your nutrition</h2>
+                        <p class="text-secondary mb-0">Natural, research based supplements and easy routines, for more <br> relaxed, happy and productive lifestyle</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="page-section bg-primary" id="howIt">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-primary mt-0">How It Works</h2>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="row row-cols-1 row-cols-md-3 g-4 text-center mt-4">
+                    <div class="col">
+                      <div class="card border-0 bg-transparent">
+                        <div class="card-body">
+                          <img src="assets/icons/quiz.gif" alt="...">
+                            <p class="card-text"> Discover your needs with</p>
+                            <h5 class="card-title text-uppercase">our quiz</h5>
+                            <button type="button" class="btn btn-light mt-4 btn-lg px-4 text-uppercase">Coming Soon...</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 bg-transparent">
+                        <div class="card-body">
+                            <img src="assets/icons/health_goals.gif" alt="...">
+                            <p class="card-text"> Complete your meals according</p>
+                            <h5 class="card-title text-uppercase">your health goals</h5>
+                            <button type="button" class="btn btn-light mt-4 btn-lg px-4 text-uppercase">Learn More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 bg-transparent">
+                        <div class="card-body">
+                            <img src="assets/icons/budha.gif" alt="...">
+                            <p class="card-text"> Simply be at </p>
+                            <h5 class="card-title text-uppercase">YOUR BEST</h5>
+                            <button type="button" class="btn btn-light mt-4 btn-lg px-4 text-uppercase">Share Story</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--  -->
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="supplement">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0 mb-5 text-primary">Premium Supplement Blends</h2>
+                  <div class="supplementSlide text-center">
+                      <div class="card h-100 mx-2 border-0 bg-transparent">
+                        <img src="assets/Refills/bag-Energy.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-uppercase">Energy Starter- Set</h5>
+                          <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
+                          <p class="fw-bold h4">14,90 EUR</p>
+                          <button class="btn btn-primary px-5 py-2 rounded-0  mt-4">Add To Cart</button>
+                        </div>
+                      </div>
+                      <div class="card h-100 mx-2 border-0 bg-transparent">
+                        <img src="assets/Refills/bag-sleep.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase"> SLEEP Starter- Set</h5>
+                            <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
+                            <p class="fw-bold h4">14,90 EUR</p>
+                            <button class="btn btn-outline-primary px-5 py-2 rounded-0 mt-4">Notify Me</button>
+                          </div>
+                      </div>
+                      <div class="card h-100 mx-2 border-0 bg-transparent">
+                        <img src="assets/Refills/bag-harmony.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">Harmony Starter- Set</h5>
+                            <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
+                            <p class="fw-bold h4">14,90 EUR</p>
+                            <button class="btn btn-outline-primary px-5 py-2 rounded-0 mt-4">Add To Cart</button>
+                          </div>
+                      </div>
+                      <div class="card h-100 mx-2 border-0 bg-transparent">
+                        <img src="assets/Refills/Bag-immunity.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">Immunity Starter- Set</h5>
+                            <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
+                            <p class="fw-bold h4">14,90 EUR</p>
+                            <button class="btn btn-outline-primary px-5 py-2 rounded-0 mt-4">Add To Cart</button>
+                        </div>
+                      </div>
+                      <div class="card h-100 mx-2 border-0 bg-transparent">
+                        <img src="assets/Refills/bag-focus.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase">Focus Starter- Set</h5>
+                            <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
+                            <p class="fw-bold h4">14,90 EUR</p>
+                            <button class="btn btn-outline-primary px-5 py-2 rounded-0 mt-4">Add To Cart</button>
+                          </div>
+                      </div>
+                  </div> 
+            </div>
+        </section>
+      
+        <section class="page-section bg-secondary position-relative" id="natural">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="ingredientImg">
+                            <img src="assets/img/natural-ingredient-img.jpg" alt="natural-ingredient-img">
+                        </div>
+                        <div class="card card-body border-0 bg-transparent text-center">
+                            <img src="assets/icons/natural-icon.svg" alt="natural-icon" width="70px" class="mx-auto">
+                            <p class="h3 text-white mt-4 fw-normal"> Effective only with</p>
+                            <p class="fw-bold text-uppercase h1 text-white">Natural <br> ingredients</p>
+                        </div>
+                        <!-- <img src="" alt="natural-ingredient-img.jpg" class="img-fluid"> -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row align-items-center g-3">
+                            <div class="col-lg-6 order-2 order-lg-1">
+                                <div class="infoBlock">
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/Ingredients/effective.png" class="img-fluid" alt="effective" width="100px">
+                                        </div>
+                                        <div class="flex-flll ms-3 fw-bold"> Effective doses <span class="fw-normal">of plant extracts & superfoods</span>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/Ingredients/health.png" class="img-fluid" alt="effective" width="100px">
+                                        </div>
+                                        <div class="flex-flll ms-3">Specific Pre- & Probiotics as <span class="fw-bold">health start in your guts</span>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/Ingredients/daily-fuel.png" class="img-fluid" alt="effective" width="100px">
+                                        </div>
+                                        <div class="flex-flll ms-3">Vitamins & Minerals as<span class="fw-bold">daily fuel</span></span>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <div class="flex-shrink-0">
+                                            <img src="assets/Ingredients/tasty.png" class="img-fluid" alt="effective" width="100px">
+                                        </div>
+                                        <div class="flex-flll ms-3">Tasty <span class="fw-normal">only with natural aramos</span>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <img src="assets/Refills/bag-sleep.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- No Pills-->
+        <section class="page-section" id="noPills" style="background:url(assets/background/only-powder-bg.jpg) no-repeat;">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-5 col-xl-5 col-xxl-5 d-block d-sm-none">
+                        <img src="assets/img/ing-img.jpg" alt="ing-img.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-7 col-xl-7 col-xxl-7">
+                        <div class="p-4 p-lg-0">
+                            <h2 class="mb-4 mt-5 text-primary">No pills, <span class="fw-bold">only powders!</span></h2>
+                            <p class="text-primary mb-4 ">We believe that the best ingredients nature has to offer should not come in the form of pills and plastic containers.</p>
+                            <p class="text-primary"> ZENPATH brings you a collection of tasty and carefully crafted supplement powders. This will make supporting your body and mind a unique and sustainable experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+
+        <section class="page-section bg-secondary position-relative" id="refillSystem">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="sustainableImg">
+                            <img src="assets/img/sustainable.jpg" alt="natural-ingredient-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-row justify-content-center align-items-center ">
+                            <div class="flex-shrink-0">
+                                <img src="assets/icons/sustainable-icon.svg" alt="sustainable-icon.svg" width="100px">
+                            </div>
+                            <div class="flex-flll ms-3">
+                                <p class="h4 text-primary"> Sustainable thanks to</p>
+                                <p class="h2 fw-bold m-0 text-primary">REFILL SYSTEM</p>
+                            </div>
+                         </div>
+                         <div class="mobProImg d-block d-sm-none">
+                            <img src="assets/img/product-refill.png" alt="product-refill" class="img-fluid mt-5">
+                         </div>
+                         <div class="centerImg d-sm-block d-none">
+                            <img src="assets/img/product-refill.png" alt="product-refill" class="img-fluid">
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="page-section bg-white position-relative" id="promise">
+            <div class="container">
+                <h2 class="text-center mt-0 mb-5 text-primary">Our Promise</h2>
+                <div class="row row-cols-1 row-cols-md-5 g-0 text-center">
+                    <div class="col">
+                      <div class="card border-0 h-100">
+                        <div class="card-body">
+                        <div class="imgIcon mb-5">
+                            <img src="assets/icons/effective.svg" alt="effective" class="mx-auto" width="80px" height="80px">
+                        </div>
+                        <div class="proinfo">
+                            <h5 class="card-title text-primary fw-normal mb-4">EFFECTIVE <br> INGREDIENTS</h5>
+                            <p class="card-text text-primary p-3 pt-0"> Our experienced team of doctors and nutritionists continuously follows the latest research findings. We use ingredients in our formulas which are backed by science to ensure that you will experience real results.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card border-0 h-100">
+                        <div class="card-body">
+                         <div class="imgIcon mb-5">
+                            <img src="assets/icons/no-sugar.svg" alt="no-sugar" class="mx-auto" width="80px" height="80px">
+                         </div>
+                         <div class="proinfo">
+                            <h5 class="card-title text-primary fw-normal mb-4">NATURAL & <br> WITHOUT SUGAR</h5>
+                            <p class="card-text text-primary p-3 pt-0">We never use any artificial colors or flavors in any of our products so that all products are 100% save and healthy for daily use. We only use natural ingredients and sucralose as sweetener.</p>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 h-100">
+                          <div class="card-body">
+                            <div class="imgIcon mb-5">
+                                <img src="assets/icons/germany.svg" alt="germany" class="mx-auto" width="80px" height="80px">
+                            </div>
+                            <div class="proinfo">
+                            <h5 class="card-title text-primary fw-normal mb-4">MADE IN <br> GERMANY</h5>
+                            <p class="card-text text-primary p-3 pt-0">All ingredients come from transparent sources and our supplements are 100% developed, tested and manufactured in Germany.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 h-100">
+                          <div class="card-body">
+                            <div class="imgIcon mb-5">
+                                <img src="assets/icons/sustain.svg" alt="sustain" class="mx-auto" width="80px" height="80px">
+                            </div>
+                            <div class="proinfo">
+                            <h5 class="card-title text-primary fw-normal mb-4" style=" height: 50px; line-height: 50px;">SUSTAINABLE</h5>
+                            <p class="card-text text-primary p-3 pt-0">To make all our product environmental friendly we have developed a sustainable refill system to reduce waste and CO2 emission.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0 h-100">
+                          <div class="card-body">
+                            <div class="imgIcon mb-5">
+                                <img src="assets/icons/satisfaction.svg" alt="satisfaction" class="mx-auto" width="80px" height="80px">
+                            </div>
+                            <div class="proinfo">
+                            <h5 class="card-title text-primary fw-normal mb-4">SATISFACTION <br> GUARANTEE</h5>
+                            <p class="card-text text-primary p-3 pt-0">If you are not satisfied you can return the product within 30 days and you will get your full money back. This even applies if you have already opened and tried the product.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="page-section bg-beige" id="community">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h4 class="h2 text-primary mb-5">Community Stories</h4>
+                    </div>
+                </div>
+                <!--  -->
+                
+                <div class="testimonial">
+                    <div class="quote">
+                        <figure class="text-center">
+                            <blockquote class="blockquote mb-5">
+                              <p class="display-6">“Perfect soap with nice fragrance. And it contains natural fruit acids that help smooth rough, dry skin and retain moisture.”</p>
+                            </blockquote>
+                            <div class="imgPerson">
+                                <img src="assets/img/generated_photos.jpg" alt="generated_photos" width="100px" class="rounded-circle mx-auto">
+                            </div>
+                            <figcaption class="mt-3 text-primary h4 fw-bold"> - Jamie J - <br> <span title="Source Title" class="fw-light">Nurse, Mommy</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!--  -->
+                    <div class="quote">
+                        <figure class="text-center">
+                            <blockquote class="blockquote mb-5">
+                              <p class="display-6">“Perfect soap with nice fragrance. And it contains natural fruit acids that help smooth rough, dry skin and retain moisture.”</p>
+                            </blockquote>
+                            <div class="imgPerson">
+                                <img src="assets/img/generated_photos.jpg" alt="generated_photos" width="100px" class="rounded-circle mx-auto">
+                            </div>
+                            <figcaption class="mt-3 text-primary h4 fw-bold"> - Jamie J - <br> <span title="Source Title" class="fw-light">Nurse, Mommy</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!--  -->
+                    <div class="quote">
+                        <figure class="text-center">
+                            <blockquote class="blockquote mb-5">
+                              <p class="display-6">“Perfect soap with nice fragrance. And it contains natural fruit acids that help smooth rough, dry skin and retain moisture.”</p>
+                            </blockquote>
+                            <div class="imgPerson">
+                                <img src="assets/img/generated_photos.jpg" alt="generated_photos" width="100px" class="rounded-circle mx-auto">
+                            </div>
+                            <figcaption class="mt-3 text-primary h4 fw-bold"> - Jamie J - <br> <span title="Source Title" class="fw-light">Nurse, Mommy</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!--  -->
+                </div> 
+            </div>
+        </section>
+
+        <!--  -->
+        <section class="page-section" id="follow">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h4 class="h2 text-primary">Follow @ZENPATH</h4>
+                        <p class="text-primary">For your dily dose of inspiration</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="slider followSlide">
+                        <div class="card card-body p-2 border-0">
+                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                        </div>
+                        <div class="card card-body p-2 border-0">
+                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                        </div>
+                        <div class="card card-body p-2 border-0">
+                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                        </div>
+                        <div class="card card-body p-2 border-0">
+                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                        </div>
+                        <div class="card card-body p-2 border-0">
+                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="h2 text-center mt-5 text-primary">Ready to get started?</h3>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                    <button class="btn btn-primary btn-lg px-5 rounded-0 text-uppercase" type="button">Take The Quiz</button>
+                    <button class="btn btn-primary btn-lg px-5 rounded-0 text-uppercase" type="button">Discover Products</button>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-grey text-white">
+            <div class="container">
+                <div class="row">       
+                <div class="col-6 col-md-3 mb-3">
+                    <h5><img src="assets/icons/foot-logo.svg" alt="foot-logo.svg" class="mb-3"></h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="mailto:upport@zen-path.com" class="nav-link p-0 ">upport@zen-path.com</a></li>
+                        <li class="nav-item mb-2"><a href="tel:+498009833887" class="nav-link p-0">+49 800-983-3887</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> Mon – Fri, 9 am to 9 pm</a></li>
+                    </ul>
+                    <ul class="list-unstyled d-flex m-0 mt-4">
+                        <li><a class="link-dark" href="#"><img src="assets/icons/004-twitter.svg" alt=""></a></li>
+                        <li class="mx-4"><a class="link-dark" href="#"><img src="assets/icons/001-facebook.svg" alt=""></a></li>
+                        <li><a class="link-dark" href="#"><img src="assets/icons/003-instagram-symbol.svg" alt=""></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-3">
+                    <h5>Products</h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">All Products</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bundles</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bestsellers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Newcomers</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Starter Sets</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Refills</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Accessories</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-6 col-md-3 mb-3">
+                    <h5>Information</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Abou Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Effects</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Ingredients</li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Term of Service</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-3 mb-3">
+                    <form>
+                    <h5>Sign up to get promos, giveaways and product news.</h5>
+                    <p> We will use your personal data as described in our privacy policy.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Enter Email Address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Submit</button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            
+                <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+                <p class="m-0">All rights reserved © 2021 Innovative Nutrition GmbH Datenschutzerklärung | Impressum | Widrrufbelehrung | AGBs</p>
+                <img src="assets/icons/payment-icons.png" alt="payment-icons" class="img-fluid">
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+
+        <script src='https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js'></script>
+
+       <script src="lib/slick/slick.min.js"></script>
+
+
+        <script src="js/jquery.circular-carousel.js"></script> 
+  
+        <!-- Core theme JS-->
+        <script src="js/custom-scripts.js"></script>
+
+        <!-- <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect:"coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView:"auto",
+             coverflowEffect:{
+               rotate:20,
+               stretch:0,
+               depth:400,
+               modifier:1,
+               slideshadows:false,
+             },
+               loop:true,
+               autoplay: {
+                 delay: 2500,
+                 disableOnInteraction: false,
+               },
+               pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+               },
+               navigation: {
+                 nextEl: ".swiper-button-next",
+                 prevEl: ".swiper-button-prev",
+               },
+             });
+         </script> -->
+         <script>
+            (function() {
+
+            $(document).ready(function() {
+
+                var options = {
+                    ovalWidth: 200,
+                    ovalHeight: 100,
+                    offsetX:-220,
+                    offsetY: 60,
+                    angle: 0,
+                    activeItem: 0,
+                    duration: 350,
+                    className: 'item'
+                }
+
+                var carousel = $('.Slide3D').CircularCarousel(options);
+
+                /* Previous button */
+                $('.controls .previous').click(function(e) {
+                    carousel.cycleActive('previous');
+                    e.preventDefault();
+                });
+
+                /* Next button */
+                $('.controls .next').click(function(e) {
+                    carousel.cycleActive('next');
+                    e.preventDefault();
+                });
+
+                /* Manaully click an item anywhere in the carousel */
+                $('.Slide3D .item').click(function(e) {
+                    var index = $(this).index('li');
+                    carousel.cycleActiveTo(index);
+                    e.preventDefault();
+                });
+
+            });
+
+            })();
+         </script>
+         <script>
+            $('.supplementSlide').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow:"<img class='a-left control-c prev slick-prev' src='assets/icons/product-arrow-right.png'>",
+                 nextArrow:"<img class='a-right control-c next slick-next' src='assets/icons/product-arrow-left.png'>",
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        prevArrow: false,
+                        nextArrow: false
+                    }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+                });
+         </script>
+         <script>
+            $('.followSlide').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow:"<img class='a-left control-c prev slick-prev' src='assets/icons/product-arrow-right.png'>",
+                 nextArrow:"<img class='a-right control-c next slick-next' src='assets/icons/product-arrow-left.png'>",
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        centerMode: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        prevArrow: false,
+                        nextArrow: false
+                    }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+                });
+         </script>
+        <!--  -->
+
+        <!-- <script>
+            $('.testimonials').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                infinite: true,
+                cssEase: 'linear',
+                slide: 'li',
+                arrows: true,
+            });
+        </script> -->
+
+<script>
+    $('.testimonial').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='assets/icons/product-arrow-right.png'>",
+                 nextArrow:"<img class='a-right control-c next slick-next' src='assets/icons/product-arrow-left.png'>",
+        });		
+</script>
+
+    </body>
+</html>
