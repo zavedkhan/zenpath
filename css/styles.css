@@ -72,6 +72,36 @@ body {
   border: 0;
 }
 
+.btn-outline-primary { border-radius: 1px; border: solid 1.5px #777; color: #7d756f; }
+
+.dropdown-large{ padding:1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-large{min-width:1120px;}
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    top: 50px;
+    border: 0;
+    border-radius: 0;
+}
+
+}	
+/* ============ desktop view .end// ============ */
+
+.dropdown-menu ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3;
+  letter-spacing: .5px;
+  padding: 0;
+  text-decoration: none;
+  color: #171717;
+}
+
+
+
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
@@ -111,7 +141,7 @@ body {
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
+    color: #ebbaa9;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -241,6 +271,46 @@ section#noPills {
   left: 55%;
 }
 
+section#howIt::before{
+  content: "";
+  position: absolute;
+  left: -80px;
+  width: 260px;
+  height: 256px;
+  top: -10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  z-index: 2;
+  background-image: url('../assets/icons/how-it-work1.png');
+}
+section#howIt::after{
+  content: "";
+  position: absolute;
+  left: -80px;
+  width: 260px;
+  height: 256px;
+  bottom: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  z-index: 2;
+  background-image: url('../assets/icons/how-it-work2.png');
+}
+.rightimg::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 150px;
+  height: 216px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  z-index: 2;
+  background-image: url('../assets/icons/how-it-work3.png');
+}
+
 section#natural {
   padding: 9em 0;
 }
@@ -263,12 +333,12 @@ section#promise::before {
 #promise .card::after {
   content: '';
   position: absolute;
-  height: 60%;
+  height: 260px;
   right: 0;
-  top: 70px;
+  top: 120px;
 }
 #promise .card:after {
-  border-right: 1px solid #888 !important;
+  border-right: 1px solid #dcdcdc !important;
   border: 0;
   border-radius: 0;
 }
@@ -280,6 +350,16 @@ section#promise::before {
   border-right: 0 !important;
 }
 /*  */
+.blockquote p {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 0.47px;
+  text-align: center;
+  color: #474747;
+}
 
 .infoBlock {
   position: absolute;
@@ -290,10 +370,14 @@ section#promise::before {
   margin-left: 70px;
 }
 
+.Allrights { font-size: 12px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.58; letter-spacing: 0.4px; color: #fff; }
 
 footer .nav-link{
   color:#fff;
 }
+
+
+/*  */
 
 /* // `xs` returns only a ruleset and no media query
 // ... { ... } */
@@ -301,9 +385,21 @@ footer .nav-link{
 /* 
 // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  section#howIt::before{display: none;}
+  section#howIt::after {width: 180px; height: 176px;}
+  .caption {margin-top: 20em;}
+  .supplementSlide .card .card-title{ white-space: normal; margin-bottom: 1em; font-size: 16px; font-weight: 600; color: #716763; height: 34px; }
+  .supplementSlide .card p.card-text { font-size: 14px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.43; color: #716763; }
+  .price{  font-size: 17px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.29; letter-spacing: 0.4px; text-align: center; color: #474747;}
+  section#promise::before{display: none;}
+  .proinfo{ font-size: 13px; font-weight: 200; line-height: 1.69; letter-spacing: normal; }
   .infoBlock { position: initial; transform: initial; left: 50%; top: 50%; width: auto; margin-left: auto; }
   section#noPills {padding: 2em 0;} 
   .sustainableImg {padding: 0;}
+  #guides { padding: 3em 0 28em; background-position-x: 19% !important; }
+  section#natural {padding: 6em 0;}
+  section#natural::before{position:absolute; content: ''; background-image: url('../assets/img/natural-ingredient-img.jpg');height: 30%; width: 100%;background-size: cover;top: 0;}
+  .proImgBig{position: relative;}
   .ingredientImg img, .sustainableImg img {display: none;}
   #noPills { background: none !important;}
   #community .slick-next {  right: 50px; top: 68%;}

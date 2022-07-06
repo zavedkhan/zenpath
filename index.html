@@ -27,28 +27,72 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 text-uppercase" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container-xxl container-xl container-lg container-md container-sm">
-
+             <div class="d-flex align-items-center">
                 <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
+                <a class="d-block d-sm-none ms-3" aria-current="page" href="#"><img src="assets/icons/search.svg" alt="search" width="20px" height="20px"></a>
+            </div>
+
+            <a class="d-block d-sm-none" href="#"><img src="assets/mobile-logo-icon_300x.png" alt="ZENPATH Logo"></a>
+
+            <div class="d-block d-sm-none d-flex">
+                <a class="me-3" href="#"><img src="assets/icons/user.svg" alt="user" width="20px" height="20px"></a>
+                <a class="" href="#"><img src="assets/icons/bag.svg" alt="cart" width="20px" height="20px"></a>
+            </div>
                
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+                        <img src="assets/Logo.svg" alt="Zenpath Logo">
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body flex-grow-1 align-items-center">
                     
                   <ul class="navbar-nav mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown megamenuX">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRODUCTS</a>
+                        <div class="dropdown-menu dropdown-large">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-lg-2">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">All Products</a></li>
+                                        <li><a href="#">Bundled</a></li>
+                                        <li><a href="#">Bestsellers</a></li>
+                                        <li><a href="#">Newcomers</a></li>
+                                    </ul>
+                                </div><!-- end col-3 -->
+                                <div class="col-lg-7">
+                                  <div class="d-flex align-items-center text-center">
+                                    <div class="flex-fill">
+                                        <img src="assets/img/harmony_set_2048x.png" alt="harmony_set_2048x.png" class="img-fluid">
+                                        <p class="m-0">Starter Sets</p>
+                                    </div>
+                                    <div class="flex-fill">
+                                        <img src="assets/img/sleep_refills_2048x.png" alt="" class="img-fluid">
+                                        <p class="m-0">Refills</p>
+                                    </div>
+                                    <div class="flex-fill">
+                                        <img src="assets/img/accessories_970x.png" alt="" class="img-fluid">
+                                        <p class="m-0">Accessories</p>
+                                    </div>
+                                  </div>
+                                </div><!-- end col-6 -->
+                                <div class="col-lg-3">
+                                    <img src="assets/img/Screenshot_1_1512x.png" alt="" class="img-fluid w-100">
+                                </div><!-- end col-6 -->
+                            </div>
+                        </div> <!-- dropdown-large.// -->
+                    </li>
+                    
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Products</a>
+                      <a class="nav-link" href="#">EFFECTS</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Effects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ingredients</a>
+                        <a class="nav-link" href="#">INGREDIENTS</a>
                      </li>
                   </ul>
                   
@@ -56,95 +100,150 @@
 
                   <ul class="navbar-nav mb-2 mb-lg-0 d-sm-block d-none">
                     <li class="nav-item">
-                        <a href="#" class="nav-link me-3">Magazine</a>
+                        <a href="#" class="nav-link me-3">MAGAZINE</a>
                     </li>
                   </ul>  
 
                   <select class="selectpicker languageSelect d-sm-block d-none" data-width="fit">
-                    <option data-content='<span class="flag-icon flag-icon-us"></span> Eng'>Eng</option>
-                    <option  data-content='<span class="flag-icon flag-icon-mx"></span> Esp'>Esp</option>
+                    <option data-content='<span class="flag-icon flag-icon-us"></span> ENG'>ENG</option>
+                    <option  data-content='<span class="flag-icon flag-icon-mx"></span> ESP'>ESP</option>
                   </select>
-                        
-                  <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#"><img src="assets/icons/search.svg" alt="search" width="20px" height="20px"></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="assets/icons/user.svg" alt="user" width="20px" height="20px"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="assets/icons/bag.svg" alt="cart" width="20px" height="20px"></a>
-                     </li>
-                  </ul>
-
+                
+                  <div class="d-sm-block d-none">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><img src="assets/icons/search.svg" alt="search" width="20px" height="20px"></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="assets/icons/user.svg" alt="user" width="20px" height="20px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="assets/icons/bag.svg" alt="cart" width="20px" height="20px"></a>
+                        </li>
+                    </ul>
+                   </div>
                 </div>
              </div>
                 
             </div>
-     </nav>
+       </nav>
         
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-2 h-100">
                 <div class="row align-items-center h-100">
-                    <div class="col-lg-4 align-item-center text-start">
-                        <h1 class="fw-light text-primary">Take control of <br> your <span class="fw-bold"> MOOD</span></h1>
-                        <p class="text-white-75 mb-4">Innovative formula to relief <br> stress and support your mood.</p>
-                        <a class="btn btn-primary px-5 py-2 rounded-0" href="#about">LEARN MORE</a>
-                    </div>
-                    <div class="col-lg-8 align-item-center">
-                    <div class="circle-round">
-                     <!-- Swiper -->
-                     <ul class="Slide3D d-sm-block d-none">
-                        <li class="item active">
-                            <div class="img-a">
-                                <img src="assets/slide-pic/Harmony-carousel-min.png" alt="">
-                            </div>
-                            <div class="img-b">
-                                <img src="assets/slide-pic/Harmony.png" alt="">
-                            </div>
-
-                        </li>
-                        <li class="item">
-                            <div class="img-a">
-                                <img src="assets/slide-pic/focus-carousel-min.png" alt="">
-                            </div>
-                            <div class="img-b">
-                                <img src="assets/slide-pic/Focus.png" alt="">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="img-a">
-                                <img src="assets/slide-pic/sleep-carousel-min.png" alt="">
-                            </div>
-                            <div class="img-b">
-                                <img src="assets/slide-pic/Sleep.png" alt="">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="img-a">
-                                <img src="assets/slide-pic/Immunity-carousel-min.png" alt="">
-                            </div>
-                            <div class="img-b">
-                                <img src="assets/slide-pic/immunity.png" alt="">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="img-a">
-                                <img src="assets/slide-pic/Enery-carousel-min.png" alt="">
-                            </div>
-                            <div class="img-b">
-                                <img src="assets/slide-pic/Energy.png" alt="">
-                            </div>
-                        </li>
-                       
-                      </ul>
-                        <!--  -->
-                        <div class="controls">
-                            <a href="#" class="previous me-3"><img src="assets/slide-pic/crousal-left.svg" alt="crousal-left"></a> 
-                            <a href="#" class="next  ms-3"><img src="assets/slide-pic/crousal-right.svg" alt="crousal-right"></a>
+                    <div class="col-lg-4 align-item-center text-center text-lg-start order-2 order-lg-1">
+                        <div class="caption">
+                            <h1 class="fw-light text-primary">Take control of <br> your <span class="fw-bold"> MOOD</span></h1>
+                            <p class="text-white-75 mb-4">Innovative formula to relief <br> stress and support your mood.</p>
+                            <a class="btn btn-primary px-5 py-2 rounded-0" href="#about">LEARN MORE</a>
                          </div>
                     </div>
+                    <div class="col-lg-8 align-item-center order-1 order-lg-2">
+                        <div class="circle-round1 d-none d-sm-block">
+                        <!-- Swiper -->
+                        <ul class="Slide3D">
+                            <li class="item active">
+                                <div class="img-a">
+                                    <img src="assets/slide-pic/Harmony-carousel-min.png" alt="">
+                                </div>
+                                <div class="img-b">
+                                    <img src="assets/slide-pic/Harmony.png" alt="">
+                                </div>
+
+                            </li>
+                            <li class="item">
+                                <div class="img-a">
+                                    <img src="assets/slide-pic/focus-carousel-min.png" alt="">
+                                </div>
+                                <div class="img-b">
+                                    <img src="assets/slide-pic/Focus.png" alt="">
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="img-a">
+                                    <img src="assets/slide-pic/sleep-carousel-min.png" alt="">
+                                </div>
+                                <div class="img-b">
+                                    <img src="assets/slide-pic/Sleep.png" alt="">
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="img-a">
+                                    <img src="assets/slide-pic/Immunity-carousel-min.png" alt="">
+                                </div>
+                                <div class="img-b">
+                                    <img src="assets/slide-pic/immunity.png" alt="">
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="img-a">
+                                    <img src="assets/slide-pic/Enery-carousel-min.png" alt="">
+                                </div>
+                                <div class="img-b">
+                                    <img src="assets/slide-pic/Energy.png" alt="">
+                                </div>
+                            </li>
+                        
+                        </ul>
+                            <!--  -->
+                            <div class="controls">
+                                <a href="#" class="previous me-3"><img src="assets/slide-pic/crousal-left.svg" alt="crousal-left"></a> 
+                                <a href="#" class="next  ms-3"><img src="assets/slide-pic/crousal-right.svg" alt="crousal-right"></a>
+                            </div>
+                        </div>
+                        <div class="circle-round2 d-block d-sm-none">
+                            <!-- Swiper -->
+                            <ul class="Slide3DNew">
+                                <li class="item active">
+                                    <div class="img-a">
+                                        <img src="assets/slide-pic/Harmony-carousel-min.png" alt="">
+                                    </div>
+                                    <div class="img-b">
+                                        <img src="assets/slide-pic/Harmony.png" alt="">
+                                    </div>
+    
+                                </li>
+                                <li class="item">
+                                    <div class="img-a">
+                                        <img src="assets/slide-pic/focus-carousel-min.png" alt="">
+                                    </div>
+                                    <div class="img-b">
+                                        <img src="assets/slide-pic/Focus.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="img-a">
+                                        <img src="assets/slide-pic/sleep-carousel-min.png" alt="">
+                                    </div>
+                                    <div class="img-b">
+                                        <img src="assets/slide-pic/Sleep.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="img-a">
+                                        <img src="assets/slide-pic/Immunity-carousel-min.png" alt="">
+                                    </div>
+                                    <div class="img-b">
+                                        <img src="assets/slide-pic/immunity.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="img-a">
+                                        <img src="assets/slide-pic/Enery-carousel-min.png" alt="">
+                                    </div>
+                                    <div class="img-b">
+                                        <img src="assets/slide-pic/Energy.png" alt="">
+                                    </div>
+                                </li>
+                            
+                            </ul>
+                                <!--  -->
+                                <div class="controls">
+                                    <a href="#" class="previous me-3"><img src="assets/slide-pic/crousal-left.svg" alt="crousal-left"></a> 
+                                    <a href="#" class="next  ms-3"><img src="assets/slide-pic/crousal-right.svg" alt="crousal-right"></a>
+                                </div>
+                            </div>
                    </div>
                 </div>
                 <div class="heroYoga d-none d-sm-block" style="background-image:url('assets/hero-yoga-image.png') ;"></div>
@@ -162,11 +261,12 @@
             </div>
         </section>
         <!--  -->
-        <section class="page-section bg-primary" id="howIt">
+        <section class="page-section bg-primary position-relative" id="howIt">
+            <div class="rightimg"></div>
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-primary mt-0">How It Works</h2>
+                        <h2 class="text-primary mt-0 fw-bold">How It Works</h2>
                     </div>
                 </div>
                 <!--  -->
@@ -174,30 +274,30 @@
                     <div class="col">
                       <div class="card border-0 bg-transparent">
                         <div class="card-body">
-                          <img src="assets/icons/quiz.gif" alt="...">
+                          <img src="assets/icons/quiz.gif" alt="quiz">
                             <p class="card-text"> Discover your needs with</p>
                             <h5 class="card-title text-uppercase">our quiz</h5>
-                            <button type="button" class="btn btn-light mt-4 btn-lg px-4 text-uppercase">Coming Soon...</button>
+                            <button type="button" class="btn btn-light rounded-0 mt-4 btn-lg px-4 text-uppercase">Coming Soon...</button>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                         <div class="card border-0 bg-transparent">
                         <div class="card-body">
-                            <img src="assets/icons/health_goals.gif" alt="...">
+                            <img src="assets/icons/health_goals.gif" alt="health_goals">
                             <p class="card-text"> Complete your meals according</p>
                             <h5 class="card-title text-uppercase">your health goals</h5>
-                            <button type="button" class="btn btn-light mt-4 btn-lg px-4 text-uppercase">Learn More</button>
+                            <button type="button" class="btn btn-primary rounded-0 mt-4 btn-lg px-4 text-uppercase">Learn More</button>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                         <div class="card border-0 bg-transparent">
                         <div class="card-body">
-                            <img src="assets/icons/budha.gif" alt="...">
+                            <img src="assets/icons/budha.gif" alt="budha">
                             <p class="card-text"> Simply be at </p>
                             <h5 class="card-title text-uppercase">YOUR BEST</h5>
-                            <button type="button" class="btn btn-light mt-4 btn-lg px-4 text-uppercase">Share Story</button>
+                            <button type="button" class="btn btn-light rounded-0 mt-4 btn-lg px-4 text-uppercase">Share Story</button>
                         </div>
                       </div>
                     </div>
@@ -207,52 +307,52 @@
         </section>
         <!-- Services-->
         <section class="page-section" id="supplement">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0 mb-5 text-primary">Premium Supplement Blends</h2>
+            <div class="container">
+                <h2 class="text-center mt-0 mb-5 text-primary fw-bold">Premium Supplement Blends</h2>
                   <div class="supplementSlide text-center">
-                      <div class="card h-100 mx-2 border-0 bg-transparent">
-                        <img src="assets/Refills/bag-Energy.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-uppercase">Energy Starter- Set</h5>
+                      <div class="card h-100 border-0 bg-transparent">
+                        <div class="card-body p-1 p-lg-3">
+                          <img src="assets/Refills/bag-Energy.png" alt="bag-Energy" class="img-fluid">
+                          <h5 class="card-title text-uppercase">Energy Starter - Set</h5>
                           <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
-                          <p class="fw-bold h4">14,90 EUR</p>
-                          <button class="btn btn-primary px-5 py-2 rounded-0  mt-4">Add To Cart</button>
+                          <p class="fw-bold h4 price">14,90 EUR</p>
+                          <button class="btn btn-primary px-lg-5 py-lg-2 rounded-0  mt-4">Add To Cart</button>
                         </div>
                       </div>
-                      <div class="card h-100 mx-2 border-0 bg-transparent">
-                        <img src="assets/Refills/bag-sleep.png" class="card-img-top" alt="...">
-                        <div class="card-body">
+                      <div class="card h-100 border-0 bg-transparent">
+                        <div class="card-body p-1 p-lg-3">
+                            <img src="assets/Refills/bag-sleep.png" class="img-fluid"  alt="bag-sleep">
                             <h5 class="card-title text-uppercase"> SLEEP Starter- Set</h5>
                             <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
-                            <p class="fw-bold h4">14,90 EUR</p>
-                            <button class="btn btn-outline-primary px-5 py-2 rounded-0 mt-4">Notify Me</button>
+                            <p class="fw-bold h4 price">14,90 EUR</p>
+                            <button class="btn btn-outline-primary px-lg-5 py-lg-2 rounded-0 mt-4">Notify Me</button>
                           </div>
                       </div>
-                      <div class="card h-100 mx-2 border-0 bg-transparent">
-                        <img src="assets/Refills/bag-harmony.png" class="card-img-top" alt="...">
-                        <div class="card-body">
+                      <div class="card h-100 border-0 bg-transparent">
+                        <div class="card-body p-1 p-lg-3">
+                            <img src="assets/Refills/bag-harmony.png" class="img-fluid" alt="bag-harmony">
                             <h5 class="card-title text-uppercase">Harmony Starter- Set</h5>
                             <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
-                            <p class="fw-bold h4">14,90 EUR</p>
-                            <button class="btn btn-outline-primary px-5 py-2 rounded-0 mt-4">Add To Cart</button>
+                            <p class="fw-bold h4 price">14,90 EUR</p>
+                            <button class="btn btn-outline-primary px-lg-5 py-lg-2 rounded-0 mt-4">Add To Cart</button>
                           </div>
                       </div>
-                      <div class="card h-100 mx-2 border-0 bg-transparent">
-                        <img src="assets/Refills/Bag-immunity.png" class="card-img-top" alt="...">
-                        <div class="card-body">
+                      <div class="card h-100 border-0 bg-transparent">
+                        <div class="card-body p-1 p-lg-3">
+                            <img src="assets/Refills/Bag-immunity.png" class="img-fluid" alt="Bag-immunity">
                             <h5 class="card-title text-uppercase">Immunity Starter- Set</h5>
                             <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
-                            <p class="fw-bold h4">14,90 EUR</p>
-                            <button class="btn btn-outline-primary px-5 py-2 rounded-0 mt-4">Add To Cart</button>
+                            <p class="fw-bold h4 price">14,90 EUR</p>
+                            <button class="btn btn-outline-primary px-lg-5 py-lg-2 rounded-0 mt-4">Add To Cart</button>
                         </div>
                       </div>
-                      <div class="card h-100 mx-2 border-0 bg-transparent">
-                        <img src="assets/Refills/bag-focus.png" class="card-img-top" alt="...">
-                        <div class="card-body">
+                      <div class="card h-100 border-0 bg-transparent">
+                        <div class="card-body p-1 p-lg-3">
+                            <img src="assets/Refills/bag-focus.png" class="img-fluid" alt="bag-focus">
                             <h5 class="card-title text-uppercase">Focus Starter- Set</h5>
                             <p class="card-text"> Fatiue fighting & energy boosting supplement</p>
-                            <p class="fw-bold h4">14,90 EUR</p>
-                            <button class="btn btn-outline-primary px-5 py-2 rounded-0 mt-4">Add To Cart</button>
+                            <p class="fw-bold h4 price">14,90 EUR</p>
+                            <button class="btn btn-outline-primary px-lg-5 py-lg-2 rounded-0 mt-4">Add To Cart</button>
                           </div>
                       </div>
                   </div> 
@@ -312,7 +412,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2">
-                                <img src="assets/Refills/bag-sleep.png" alt="" class="img-fluid">
+                                <img src="assets/Refills/bag-sleep.png" alt="bag-sleep" class="img-fluid proImgBig">
                             </div>
                         </div>
                     </div>
@@ -371,8 +471,8 @@
         <section class="page-section bg-white position-relative" id="promise">
             <div class="container">
                 <h2 class="text-center mt-0 mb-5 text-primary">Our Promise</h2>
-                <div class="row row-cols-1 row-cols-md-5 g-0 text-center">
-                    <div class="col">
+                <div class="text-center multiple-items bg-white">
+
                       <div class="card border-0 h-100">
                         <div class="card-body">
                         <div class="imgIcon mb-5">
@@ -380,13 +480,11 @@
                         </div>
                         <div class="proinfo">
                             <h5 class="card-title text-primary fw-normal mb-4">EFFECTIVE <br> INGREDIENTS</h5>
-                            <p class="card-text text-primary p-3 pt-0"> Our experienced team of doctors and nutritionists continuously follows the latest research findings. We use ingredients in our formulas which are backed by science to ensure that you will experience real results.</p>
+                            <p class="card-text text-primary p-0 p-lg-2 pt-0"> Our experienced team of doctors and nutritionists continuously follows the latest research findings. We use ingredients in our formulas which are backed by science to ensure that you will experience real results.</p>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="col">
                       <div class="card border-0 h-100">
                         <div class="card-body">
                          <div class="imgIcon mb-5">
@@ -394,41 +492,35 @@
                          </div>
                          <div class="proinfo">
                             <h5 class="card-title text-primary fw-normal mb-4">NATURAL & <br> WITHOUT SUGAR</h5>
-                            <p class="card-text text-primary p-3 pt-0">We never use any artificial colors or flavors in any of our products so that all products are 100% save and healthy for daily use. We only use natural ingredients and sucralose as sweetener.</p>
+                            <p class="card-text text-primary p-0 p-lg-2 pt-0">We never use any artificial colors or flavors in any of our products so that all products are 100% save and healthy for daily use. We only use natural ingredients and sucralose as sweetener.</p>
                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="col">
-                        <div class="card border-0 h-100">
+                      <div class="card border-0 h-100">
                           <div class="card-body">
                             <div class="imgIcon mb-5">
                                 <img src="assets/icons/germany.svg" alt="germany" class="mx-auto" width="80px" height="80px">
                             </div>
                             <div class="proinfo">
                             <h5 class="card-title text-primary fw-normal mb-4">MADE IN <br> GERMANY</h5>
-                            <p class="card-text text-primary p-3 pt-0">All ingredients come from transparent sources and our supplements are 100% developed, tested and manufactured in Germany.</p>
+                            <p class="card-text text-primary p-0 p-lg-2 pt-0">All ingredients come from transparent sources and our supplements are 100% developed, tested and manufactured in Germany.</p>
                             </div>
                           </div>
-                        </div>
-                    </div>
+                      </div>
 
-                    <div class="col">
-                        <div class="card border-0 h-100">
+                      <div class="card border-0 h-100">
                           <div class="card-body">
                             <div class="imgIcon mb-5">
                                 <img src="assets/icons/sustain.svg" alt="sustain" class="mx-auto" width="80px" height="80px">
                             </div>
                             <div class="proinfo">
                             <h5 class="card-title text-primary fw-normal mb-4" style=" height: 50px; line-height: 50px;">SUSTAINABLE</h5>
-                            <p class="card-text text-primary p-3 pt-0">To make all our product environmental friendly we have developed a sustainable refill system to reduce waste and CO2 emission.</p>
+                            <p class="card-text text-primary p-0 p-lg-2 pt-0">To make all our product environmental friendly we have developed a sustainable refill system to reduce waste and CO2 emission.</p>
                             </div>
                           </div>
-                        </div>
-                    </div>
+                      </div>
 
-                    <div class="col">
                         <div class="card border-0 h-100">
                           <div class="card-body">
                             <div class="imgIcon mb-5">
@@ -436,11 +528,10 @@
                             </div>
                             <div class="proinfo">
                             <h5 class="card-title text-primary fw-normal mb-4">SATISFACTION <br> GUARANTEE</h5>
-                            <p class="card-text text-primary p-3 pt-0">If you are not satisfied you can return the product within 30 days and you will get your full money back. This even applies if you have already opened and tried the product.</p>
+                            <p class="card-text text-primary p-0 p-lg-2 pt-0">If you are not satisfied you can return the product within 30 days and you will get your full money back. This even applies if you have already opened and tried the product.</p>
                             </div>
                           </div>
                         </div>
-                    </div>
                   </div>
             </div>
         </section>
@@ -449,7 +540,7 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-12">
-                        <h4 class="h2 text-primary mb-5">Community Stories</h4>
+                        <h4 class="h2 text-primary mb-5 fw-bold">Community Stories</h4>
                     </div>
                 </div>
                 <!--  -->
@@ -503,26 +594,31 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-12">
-                        <h4 class="h2 text-primary">Follow @ZENPATH</h4>
+                        <h4 class="h2 text-primary fw-bold">Follow @ZENPATH</h4>
                         <p class="text-primary">For your dily dose of inspiration</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="slider followSlide">
-                        <div class="card card-body p-2 border-0">
-                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                        <div class="card border-0">
+                            <div class="card-body p-2">
+                                <img src="assets/img/follow-04.jpg" alt="follow-01" class="img-fluid">
+                            </div>
                         </div>
-                        <div class="card card-body p-2 border-0">
-                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                        <div class="card border-0">
+                            <div class="card-body p-2">
+                                <img src="assets/img/follow-02.jpg" alt="follow-01" class="img-fluid">
+                            </div>
                         </div>
-                        <div class="card card-body p-2 border-0">
-                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                        <div class="card border-0">
+                            <div class="card-body p-2">
+                                <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                            </div>
                         </div>
-                        <div class="card card-body p-2 border-0">
-                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
-                        </div>
-                        <div class="card card-body p-2 border-0">
-                            <img src="assets/img/follow-01.jpg" alt="follow-01" class="img-fluid">
+                        <div class="card border-0">
+                            <div class="card-body p-2">
+                                <img src="assets/img/follow-03.jpg" alt="follow-01" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -541,62 +637,112 @@
         <footer class="py-5 bg-grey text-white">
             <div class="container">
                 <div class="row">       
-                <div class="col-6 col-md-3 mb-3">
-                    <h5><img src="assets/icons/foot-logo.svg" alt="foot-logo.svg" class="mb-3"></h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="mailto:upport@zen-path.com" class="nav-link p-0 ">upport@zen-path.com</a></li>
-                        <li class="nav-item mb-2"><a href="tel:+498009833887" class="nav-link p-0">+49 800-983-3887</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> Mon – Fri, 9 am to 9 pm</a></li>
-                    </ul>
-                    <ul class="list-unstyled d-flex m-0 mt-4">
-                        <li><a class="link-dark" href="#"><img src="assets/icons/004-twitter.svg" alt=""></a></li>
-                        <li class="mx-4"><a class="link-dark" href="#"><img src="assets/icons/001-facebook.svg" alt=""></a></li>
-                        <li><a class="link-dark" href="#"><img src="assets/icons/003-instagram-symbol.svg" alt=""></a></li>
-                    </ul>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="text-center text-md-start">
+                        <h5><img src="assets/icons/foot-logo.svg" alt="foot-logo.svg" class="mb-3"></h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="mailto:upport@zen-path.com" class="nav-link p-0 ">upport@zen-path.com</a></li>
+                            <li class="nav-item mb-2"><a href="tel:+498009833887" class="nav-link p-0">+49 800-983-3887</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0"> Mon – Fri, 9 am to 9 pm</a></li>
+                        </ul>
+                        <ul class="list-unstyled d-flex justify-content-center justify-content-lg-start m-0 mt-4">
+                            <li><a class="link-dark" href="#"><img src="assets/icons/004-twitter.svg" alt=""></a></li>
+                            <li class="mx-4"><a class="link-dark" href="#"><img src="assets/icons/001-facebook.svg" alt=""></a></li>
+                            <li><a class="link-dark" href="#"><img src="assets/icons/003-instagram-symbol.svg" alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="col-6 col-md-3 mb-3">
+                 <div class="widget1 d-none d-sm-block">
                     <h5>Products</h5>
-                    <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">All Products</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bundles</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bestsellers</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Newcomers</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Starter Sets</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Refills</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Accessories</a></li>
-                    </ul>
+                     <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">All Products</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bundles</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bestsellers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Newcomers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Starter Sets</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Refills</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Accessories</a></li>
+                     </ul>
+                   </div>
                 </div>
             
-                <div class="col-6 col-md-3 mb-3">
-                    <h5>Information</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Abou Us</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Effects</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Ingredients</li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQ</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Term of Service</a></li>
-                    </ul>
+                <div class="col-12 col-md-2 mb-3">
+                    <div class="widget2 d-none d-sm-block">
+                        <h5>Information</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Abou Us</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Effects</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Ingredients</li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQ</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Term of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget3 d-block d-sm-none">
+                        <div class="accordion bg-transparent border-0" id="accordionExample">
+                            <div class="accordion-item bg-transparent border-0">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Products
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body ps-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">All Products</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bundles</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Bestsellers</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Newcomers</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Starter Sets</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Refills</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Accessories</a></li>
+                                     </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0 border-bottom border-top rounded-0">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button bg-transparent text-white collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Information
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body ps-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Abou Us</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Effects</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Ingredients</li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQ</a></li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Privacy Policy</li>
+                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Term of Service</a></li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
                 </div>
             
-                <div class="col-md-3 mb-3">
+                <div class="col-md-4 mb-3">
                     <form>
-                    <h5>Sign up to get promos, giveaways and product news.</h5>
-                    <p> We will use your personal data as described in our privacy policy.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <h5 class="mb-4 fw-bold">Sign up to get promos, giveaways and product news.</h5>
+                    <p class="mb-3 fw-normal"> We will use your personal data as described in our privacy policy.</p>
+                    <div class="d-flex flex-row w-100 gap-0">
                         <label for="newsletter1" class="visually-hidden">Enter Email Address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary" type="button">Submit</button>
+                        <input id="newsletter1" type="text" class="form-control rounded-0" placeholder="Email address">
+                        <button class="btn btn-primary rounded-0" type="button">Submit</button>
                     </div>
                     </form>
                 </div>
                 </div>
             
                 <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
-                <p class="m-0">All rights reserved © 2021 Innovative Nutrition GmbH Datenschutzerklärung | Impressum | Widrrufbelehrung | AGBs</p>
-                <img src="assets/icons/payment-icons.png" alt="payment-icons" class="img-fluid">
+                <p class="m-0 text-center text-lg-start mb-4 mb-lg-0 Allrights">All rights reserved © 2021 Innovative Nutrition GmbH Datenschutzerklärung | Impressum | Widrrufbelehrung | AGBs</p>
+                <img src="assets/icons/payment-icons.png" alt="payment-icons" class="img-fluid payimg">
                 </div>
             </div>
         </footer>
@@ -617,6 +763,88 @@
   
         <!-- Core theme JS-->
         <script src="js/custom-scripts.js"></script>
+
+        <script>
+            $('.multiple-items').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 5,
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        prevArrow: false,
+                        nextArrow: false,
+
+                    }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+             });
+        </script>
+
+<script>
+    (function() {
+
+    $(document).ready(function() {
+
+        var options = {
+            ovalWidth: 130,
+            ovalHeight: 100,
+            offsetX:-70,
+            offsetY: 10,
+            angle: 0,
+            activeItem: 0,
+            duration: 350,
+            className: 'item'
+        }
+
+        var carousel = $('.Slide3DNew').CircularCarousel(options);
+
+        /* Previous button */
+        $('.controls .previous').click(function(e) {
+            carousel.cycleActive('previous');
+            e.preventDefault();
+        });
+
+        /* Next button */
+        $('.controls .next').click(function(e) {
+            carousel.cycleActive('next');
+            e.preventDefault();
+        });
+
+        /* Manaully click an item anywhere in the carousel */
+        $('.Slide3DNew .item').click(function(e) {
+            var index = $(this).index('li');
+            carousel.cycleActiveTo(index);
+            e.preventDefault();
+        });
+
+    });
+
+    })();
+ </script>
 
         <!-- <script>
             var swiper = new Swiper(".mySwiper", {
@@ -718,10 +946,10 @@
                     {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
                         prevArrow: false,
-                        nextArrow: false
+                        nextArrow: false,
                     }
                     }
                     // You can unslick at a given breakpoint now by adding:
@@ -748,7 +976,6 @@
                         slidesToShow: 3,
                         slidesToScroll: 3,
                         infinite: true,
-                        centerMode: true,
                         dots: true
                     }
                     },
@@ -762,7 +989,7 @@
                     {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
                         prevArrow: false,
                         nextArrow: false
@@ -801,6 +1028,19 @@
                  nextArrow:"<img class='a-right control-c next slick-next' src='assets/icons/product-arrow-left.png'>",
         });		
 </script>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(){
+        /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function(element){
+            element.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        })
+    }); 
+    // DOMContentLoaded  end
+</script>
+
 
     </body>
 </html>
